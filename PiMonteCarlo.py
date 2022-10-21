@@ -64,8 +64,16 @@ def calculate_pi():
     
     #4 Calculating value of pi for 100, 200, 500, 1000, 5000
     
-    points_list = [100, 200, 500, 1000, 5000]
-    pi_orig = math.pi
+    points_list = []
+
+    #uncomment the line below to use a predefined list
+    # points_list = [100, 200, 500, 1000, 5000] 
+
+    #taking input of points from user
+    points = int(input("Enter the number of points: "))
+    points_list.append(points)
+
+    pi_orig = math.pi #original value of pi
     print("--------------------------------------")
     print("Original value of pi = ",round(pi_orig, 10))
     print("--------------------------------------")
