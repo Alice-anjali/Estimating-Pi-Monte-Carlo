@@ -11,3 +11,5 @@ Below are the example outputs for the number of random points 100, 500 and 5000.
 ![circle1](https://user-images.githubusercontent.com/20883037/197213174-18a96cfe-cbb0-4856-bcd2-5d2e9083a235.png)
 ![circle2](https://user-images.githubusercontent.com/20883037/197213224-749a5a31-67f1-495c-8c2f-273e3ee1cfc0.png)
 ![circle3](https://user-images.githubusercontent.com/20883037/197213310-cb9075b8-c97a-49a2-8948-7150a5d9bce5.png)
+
+Installation of python and [matplotlib](https://matplotlib.org/stable/users/installing/index.html) is required to run the code.
