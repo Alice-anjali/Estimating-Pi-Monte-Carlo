@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import math
 
 #1. Circle at origin with radius 1
 def draw_circle():
@@ -54,3 +55,49 @@ def plot_points(points):
     plt.show()
     
     return x_list, y_list
+
+
+
+#3 Calculating value of pi
+
+def calculate_pi():
+    
+    #4 Calculating value of pi for 100, 200, 500, 1000, 5000
+    
+    points_list = [100, 200, 500, 1000, 5000]
+    pi_orig = math.pi
+    print("--------------------------------------")
+    print("Original value of pi = ",round(pi_orig, 10))
+    print("--------------------------------------")
+    print(" ")
+        
+    for i in points_list:
+        print('\033[1m', "Plotting ", i, " points:")
+        x_list, y_list = plot_points(i)
+        
+        inside_pt = 0 #number of points inside circle
+        total_pt = 0 #total number of points plotted
+    
+        for j in range(i):
+            #distance between the point from origin
+            distance_o = x_list[j]**2 + y_list[j]**2
+    
+            #if distance is less than radius of circle, then point is inside the circle
+            if distance_o <= 1:
+                inside_pt += 1
+            
+            total_pt += 1
+                
+        pi_value = (inside_pt / total_pt) * 4 #calculating the value of pi
+        pi_value = round(pi_value, 10)
+        difference = round(pi_orig - pi_value, 10) #comparison of the two values of pi
+        
+        print("Calculated value of pi = ", pi_value)
+        print("Difference between original pi and calculated pi = ", difference)
+        print(" ")
+        print("-------------------------------------------------------------")
+        print(" ")
+        
+        
+calculate_pi()
+    
