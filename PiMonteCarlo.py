@@ -1,3 +1,6 @@
+#Alice A. Tiriya
+#Estimation of pi using Monte Carlo
+
 import matplotlib.pyplot as plt
 import numpy as np
 import math
