@@ -11,6 +11,7 @@ def draw_circle():
     x = 0
     y = 0
     radius = 1 #radius of circle
+    #plotting circle
     circle = plt.Circle( (x, y ),radius ,fill = False, color='b' )
 
     ax.set_aspect(1)
