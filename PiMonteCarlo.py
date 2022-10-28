@@ -48,6 +48,7 @@ def plot_points(points):
         #generating random x and y values
         x = np.random.rand()
         y = np.random.rand()
+        #get scaled points
         new_x = round(get_new_value(x), 1)
         new_y = round(get_new_value(y), 1)
                 
